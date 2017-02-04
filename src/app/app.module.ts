@@ -24,10 +24,10 @@ import { ROUTES } from './app.routes';
 import { AppComponent } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { AppState, InternalStateType } from './app.service';
+
 import { HomeModule } from './home';
-import { AboutComponent } from './about';
-import { NoContentComponent } from './no-content';
-import { XLargeDirective } from './home/x-large';
+import { DocumentsModule } from './documents/';
+import { ProposalModule } from './proposal/';
 
 import '../styles/styles.scss';
 import '../styles/headings.css';
@@ -57,7 +57,9 @@ type StoreType = {
 		FormsModule,
 		HttpModule,
 		RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules }),
-		HomeModule
+		HomeModule,
+		DocumentsModule,
+		ProposalModule
 	],
 	providers: [ // expose our Services and Providers into Angular's dependency injection
 		ENV_PROVIDERS,
