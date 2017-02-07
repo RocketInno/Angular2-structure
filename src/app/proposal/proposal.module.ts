@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { PROPOSAL_ROUTES } from './proposal.router';
 import { ProposalComponent } from './proposal.component';
 import { ProposalNewComponent } from './proposal-new/';
+import { ProposalShowComponent } from './proposal-show/';
 
 @NgModule({
 	imports: [
@@ -14,7 +15,8 @@ import { ProposalNewComponent } from './proposal-new/';
 	],
 	declarations: [
 		ProposalComponent,
-		ProposalNewComponent
+		ProposalNewComponent,
+		ProposalShowComponent
 		]
 })
 export class ProposalModule { }
