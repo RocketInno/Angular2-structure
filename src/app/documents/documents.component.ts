@@ -15,21 +15,21 @@ export class DocumentsComponent implements OnInit {
 			description: 'Description',
 			file_url: 'http://google.com',
 			update_at: 'ayer',
-			image_url: 'http://google.com'
+			image_url: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Mistakes-to-avoid-when-hiring-freelancers.jpg'
 		},
 		{
 			title: 'Dcument 2',
 			description: 'Description',
 			file_url: 'http://google.com',
 			update_at: 'ayer',
-			image_url: 'http://google.com'
+			image_url: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Mistakes-to-avoid-when-hiring-freelancers.jpg'
 		},
 		{
 			title: 'Dcument 3',
 			description: 'Description',
 			file_url: 'http://google.com',
 			update_at: 'ayer',
-			image_url: 'http://google.com'
+			image_url: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Mistakes-to-avoid-when-hiring-freelancers.jpg'
 		}
 	];
 
