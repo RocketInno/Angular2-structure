@@ -6,11 +6,11 @@ import { ProposalShowComponent } from './proposal-show/';
 
 const routes: Routes = [
 	{
-		path: 'proposal',
+		path: 'proposals',
 		component: ProposalComponent
 	},
 	{
-		path: 'proposal/new',
+		path: 'proposals/new',
 		component: ProposalNewComponent
 	},
 	{

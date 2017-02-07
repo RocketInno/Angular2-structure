@@ -32,6 +32,8 @@ import { ProposalModule } from './proposal/';
 import '../styles/styles.scss';
 import '../styles/headings.css';
 
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 // Application wide providers
 const APP_PROVIDERS = [
 	...APP_RESOLVER_PROVIDERS,
@@ -59,7 +61,8 @@ type StoreType = {
 		RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules }),
 		HomeModule,
 		DocumentsModule,
-		ProposalModule
+		ProposalModule,
+		NgbModule.forRoot()
 	],
 	providers: [ // expose our Services and Providers into Angular's dependency injection
 		ENV_PROVIDERS,
