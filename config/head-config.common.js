@@ -37,7 +37,10 @@ module.exports = {
     /** <link> tags for a Web App Manifest **/
     { rel: 'manifest', href: '/assets/manifest.json' },
 		/** link boostrap **/
-		{ rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css' }
+		{ rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css' },
+
+		/** Font ubuntu */
+		{ rel: 'stylesheet',  href: 'https://fonts.googleapis.com/css?family=Ubuntu' }
   ],
   meta: [
     { name: 'msapplication-TileColor', content: '#00bcd4' },
