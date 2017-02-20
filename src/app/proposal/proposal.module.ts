@@ -6,6 +6,7 @@ import { PROPOSAL_ROUTES } from './proposal.router';
 import { ProposalComponent } from './proposal.component';
 import { ProposalNewComponent } from './proposal-new/';
 import { ProposalShowComponent } from './proposal-show/';
+import { ProposalService } from './proposal.service';
 
 @NgModule({
 	imports: [
@@ -17,6 +18,7 @@ import { ProposalShowComponent } from './proposal-show/';
 		ProposalComponent,
 		ProposalNewComponent,
 		ProposalShowComponent
-		]
+		],
+	providers: [ProposalService]
 })
 export class ProposalModule { }

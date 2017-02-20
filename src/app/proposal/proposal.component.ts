@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { Proposal } from './proposal';
+import { ProposalService } from './proposal.service';
+
 
 @Component({
 	selector: 'app-proposal',
@@ -14,15 +17,27 @@ export class ProposalComponent implements OnInit {
 	proposalThree: Proposal = new Proposal(300, 'Something Company', 'http://portfolio.jordanhudgens.com',
 																				'Ruby on Rails', 150, 120, 15, 'jordan@devcamp.com');
 
-	private proposals: Array<Proposal> = [
-		this.proposalOne,
-		this.proposalTwo,
-		this.proposalThree
-	];
+	private proposals: Array<any> = [];
 
-	constructor() { }
+	constructor(
+		private proposalService: ProposalService,
+		private router: Router) { }
 
 	ngOnInit() {
+		this.proposalService.getProposals()
+			.subscribe(
+				data => {
+					this.proposals = data;
+				},
+				error => {
+					console.log(error, 'error');
+				}
+			);
+	}
+
+	private goToShow(proposal): void {
+		let link = ['/proposal', proposal.id];
+		this.router.navigate(link);
 	}
 
 
